@@ -193,6 +193,7 @@ void update_AT12806379(char m){
 
 void press_gc_reset(){
   //角度は各々要調整
+  Serial.println("Reset");
   myservo.write(65);
   delay(500);
   myservo.write(90);
