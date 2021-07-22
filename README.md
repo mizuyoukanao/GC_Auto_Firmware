@@ -1,0 +1,2 @@
+# GC_Auto_Firmware
+DOL Macro ControllerとORCA GC Controllerに対応するGC自動化用Arduinoファームウェア
