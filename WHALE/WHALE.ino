@@ -2,7 +2,7 @@
 #include <Servo.h>
 // Define a Gamecube Console
 //デジタル8番ピンを使う
-CGamecubeConsole GamecubeConsole1();
+CGamecubeConsole GamecubeConsole1(5);
 Servo myservo;
 const int SV_PIN = 6;
 Gamecube_Data_t d = defaultGamecubeData;
