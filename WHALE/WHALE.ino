@@ -260,5 +260,5 @@ void loop()
 {
   update_data();
   if(!GamecubeConsole1.write(d))
-    Serial.println("failed");
+    Serial.println("GCが起動していないか、接続されていません。");
 }
