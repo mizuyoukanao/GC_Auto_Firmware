@@ -1,7 +1,7 @@
 #include "Nintendo.h"
 #include <Servo.h>
 // Define a Gamecube Console
-//デジタル8番ピンを使う
+//デジタル5,6番ピンを使う
 CGamecubeConsole GamecubeConsole1(5);
 Servo myservo;
 const int SV_PIN = 6;
