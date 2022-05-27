@@ -10,7 +10,7 @@ Gamecube_Data_t d = defaultGamecubeData;
 void setup()
 {
   //SG90用初期セットアップ
-  myservo.attach(SV_PIN, 500, 2400);
+  //myservo.attach(SV_PIN, 500, 2400);
 
   d.report.a = 0;
   d.report.b = 0;
@@ -194,10 +194,13 @@ void update_AT12806379(char m){
 void press_gc_reset(){
   //角度は各々要調整
   Serial.println("Reset");
+  myservo.attach(SV_PIN, 500, 2400);
+  delay(500);
   myservo.write(65);
   delay(500);
   myservo.write(90);
   delay(500);
+  myservo.detach();
 }
 
 void update_data(){
